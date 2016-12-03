@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "The backend for the Agile Transport app. Uses express and mongodb.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgileTransport/backend.git"
+  },
+  "keywords": [
+    "bus",
+    "timetable",
+    "api"
+  ],
+  "author": "Lajos L. Pongracz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AgileTransport/backend/issues"
+  },
+  "homepage": "https://github.com/AgileTransport/backend#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongoose": "^4.7.1"
+  }
+}
