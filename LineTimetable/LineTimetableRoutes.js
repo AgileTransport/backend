@@ -10,7 +10,7 @@ router.get('/', LineTimetableController.list);
 /*
  * GET
  */
-router.get('/:id', LineTimetableController.show);
+//router.get('/:id', LineTimetableController.show);
 
 /*
  * GET

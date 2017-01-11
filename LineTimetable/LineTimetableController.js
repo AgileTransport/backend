@@ -26,14 +26,20 @@ module.exports = {
      * LineTimetableController.timetable()
      */
     timetable: function (req, res) {
-        var line = req.params.line;
-        LineTimetableModel.find({line: line}, function (err, LineTimetables) {
+        console.log("timetable call, params:");
+        var line = String(req.params.line);
+        console.log(line);
+        console.log(typeof line);
+        console.log("------------------------");
+        //LineTimetableModel.find(function (err, LineTimetables) {
+        LineTimetableModel.find({"line": line}, function (err, LineTimetables) {
             if (err) {
                 return res.status(500).json({
                     message: 'Error when getting LineTimetable.',
                     error: err
                 });
             }
+            console.log(LineTimetables.length);
             return res.json(LineTimetables);
         });
     },
@@ -43,6 +49,8 @@ module.exports = {
      */
     show: function (req, res) {
         var id = req.params.id;
+        console.log("showCall, params:");
+        console.log(req.params);
         LineTimetableModel.findOne({_id: id}, function (err, LineTimetable) {
             if (err) {
                 return res.status(500).json({
