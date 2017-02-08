@@ -40,6 +40,7 @@ module.exports = {
                 });
             }
             console.log(LineTimetables.length);
+            //console.log(global.nextStops);
             return res.json(LineTimetables);
         });
     },

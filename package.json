@@ -23,6 +23,7 @@
   "homepage": "https://github.com/AgileTransport/backend#readme",
   "dependencies": {
     "express": "^4.14.0",
-    "mongoose": "^4.7.1"
+    "mongoose": "^4.7.1",
+    "threads": "^0.7.2"
   }
 }

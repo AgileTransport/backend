@@ -5,26 +5,26 @@ var ArrivalController = require('./ArrivalController.js');
 /*
  * GET
  */
-router.get('/', ArrivalController.list);
+router.get('/', ArrivalController.forStop);
 
 /*
  * GET
  */
-router.get('/:id', ArrivalController.show);
+//router.get('/:id', ArrivalController.show);
 
 /*
  * POST
  */
-router.post('/', ArrivalController.create);
+//router.post('/', ArrivalController.create);
 
 /*
  * PUT
  */
-router.put('/:id', ArrivalController.update);
+//router.put('/:id', ArrivalController.update);
 
 /*
  * DELETE
  */
-router.delete('/:id', ArrivalController.remove);
+//router.delete('/:id', ArrivalController.remove);
 
 module.exports = router;
